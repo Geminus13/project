@@ -4,7 +4,7 @@ def div_func():
     if num2 != 0:
         result = num1/num2
     else:
-        result = print('Attention! На ноль делить нельзя!')
+        return 'Attention! На ноль делить нельзя!'
     return result
 
 print(div_func())
