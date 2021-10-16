@@ -1,5 +1,5 @@
 def int_func(str):
-    return str[0].upper() + str[1:]
+    return str[0].upper() + str[1:].lower()
 
 
 str_user = input('Введите слова через пробел: ').split()
