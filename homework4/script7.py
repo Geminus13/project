@@ -1,17 +1,10 @@
-from itertools import count
-
-def gen():
+def gen(num):
     f = 1
-    for el in count(1):
+    for el in range(1, num+1):
         f *= el
         yield f
 
-g = gen()
+n = 10
 
-i = 0
-for el in g:
-    if i < 10:
-        print(el)
-        i += 1
-    else:
-        break
+for ind, el in enumerate(gen(n)):
+    print(f'{ind+1}!: {el}')
