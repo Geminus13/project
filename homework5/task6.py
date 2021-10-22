@@ -13,5 +13,5 @@ with codecs.open('task6.txt',"r", "utf-8" ) as file:
             if el[i].isdigit():
                 numbers.append(int(el[i]))
             i += 1
-        lessons[line[0]] = sum(numbers)
+        lessons[line[0].strip(':')] = sum(numbers)
 print(lessons)
