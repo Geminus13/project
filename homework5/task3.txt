@@ -1,0 +1,4 @@
+Ivanov 25000
+Petrov 30000
+Smirnov 15000
+Vodkin 11000
