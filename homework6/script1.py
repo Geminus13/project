@@ -1,8 +1,8 @@
 import time
 
 class TrafficLight:
-    _color = ['red', 'yellow', 'green']
-    mode = {_color[0]: 7, _color[1]: 2, _color[2]: 5}
+    __color = ['red', 'yellow', 'green']
+    mode = {__color[0]: 7, __color[1]: 2, __color[2]: 5}
 
 
     def running(self):
