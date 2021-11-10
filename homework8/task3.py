@@ -1,4 +1,4 @@
-class MyExeption(Exception):
+class MyException(Exception):
     def __init__(self, text):
         self.text = text
 
@@ -13,11 +13,11 @@ class MyExeption(Exception):
 
             try:
                 if not user_input.isdigit():
-                    raise MyExeption(f"'{user_input}' неправильный формат")
+                    raise MyException(f"'{user_input}' неправильный формат")
                 my_list.append(int(user_input))
-            except MyExeption as e:
+            except MyException as e:
                 print(e)
         return my_list
 
-exp = MyExeption('start')
+exp = MyException('start')
 print(exp.check)
